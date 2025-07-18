@@ -26,8 +26,8 @@ Features
     Passive Buzzer Feedback:
     Plays distinct tones corresponding to each command received, giving audible confirmation.
 
-    LED Indicators:
-    Controls two LEDs (White and Yellow) based on received commands.
+    AC Bulb Indicators:
+    Controls two AC Bulb (White and Yellow) based on received commands.
 
 Hardware Components
 
@@ -39,26 +39,28 @@ Hardware Components
 
     Passive Buzzer
 
-    Two LEDs (connected to GPIO 2 and GPIO 22)
-
-    Necessary resistors and wiring
+    Two AC Bulb (connected to GPIO 2 and GPIO 22)
+    
+    Realy Module
+     
+    Necessary wiring
 
     
 
 Pin Configuration
 Component	ESP32 GPIO Pin
-White LED	2
-Yellow LED	22
+White AC Bulb 2
+Yellow AC Bulb 22
 IR Receiver	21
 Passive Buzzer	23
 HC-05 RX	(connected to ESP32 TX)
 HC-05 TX	(connected to ESP32 RX)
 Commands
-Command	Action	Buzzer Tone Frequency (Hz)
-a	White AC Bulb ON (active LOW)	1000
-b	White AC Bulb OFF	1200
-c	Yellow AC Bulb ON (active LOW)	1400
-d	Yellow AC Bulb OFF	1600
+Command	Action	 Buzzer Tone Frequency  (Hz)
+a	White AC Bulb  ON   (active LOW)	1000
+b	White AC Bulb  OFF	                1200
+c	Yellow AC Bulb ON   (active LOW)	1400
+d	Yellow AC Bulb OFF	                1600
 Software Setup
 Requirements
 
@@ -90,7 +92,7 @@ Usage
 
     Use your IR remote, Bluetooth terminal, or WebSocket client to send commands.
 
-    Observe LED states and hear buzzer feedback.
+    Observe AC Bulbs' states and hear buzzer feedback.
 
 WebSocket Server
 
